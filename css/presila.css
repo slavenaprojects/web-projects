@@ -132,3 +132,7 @@ tr:nth-child(even) {
   span {
      color: #ff3300;
   }
+  
+  .fa-guitar {
+      color:red;
+  }
