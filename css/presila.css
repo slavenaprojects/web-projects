@@ -1,30 +1,28 @@
 
 
 body  {
-    background-color: #808080;
+    background-color: white;
     font-family: 'Finger Paint';
 }
 
 h1, h2, h3   {
     color: black;
-    font-family: Arial, Helvetica, sans-serif;
     padding: 25px;
     margin: 25px;
     text-align: center;
 }
 
 p    {
-    color:  #1a3300;
+    color:  black;
     font-size: 100%;
-    font-family: 'Courier New', Courier, monospace;
-}
+    }
     
 .picture { /* Align first photo */
             float: right;
 }
             
 #singer {/* Mark text in 3 section */
-    background-color: green;
+    background-color: #004d66;
     color: white;
     border: 0px solid red;
     padding: 20px;
@@ -35,7 +33,7 @@ p    {
 table {
     font-family: 'Times New Roman', Times, serif, sans-serif;
     border-collapse: collapse;
-    width: 100%;
+    width: 95%;
     margin: 30px;
 }
 
@@ -75,7 +73,7 @@ tr:nth-child(even) {
     background-color:#008000;
   }
 
-  .menta {/* How to look links menu */
+  .menta {/* Menta is class to menu box */
     display: block;
     color: white;
     text-align: left;
@@ -83,72 +81,133 @@ tr:nth-child(even) {
     text-decoration: none;
     background-color: black;
   }
-  
-   .menta :link {
+   
+   .menta :link {/* Menta is class to menu box */
     color: white;
     background-color:  #a31aff;
     text-decoration: underline;
     display: inline-block;
   }
   
-  .menta :visited {
+  .menta :visited {/* Menta is class to menu box */
     color: #1a3300;
     background-color: black;
     text-decoration: none;
     display: inline-block;
   }
   
-  .menta :hover {
+  .menta :hover {/* Menta is class to menu box */
     color: #00ff40;
     background-color: transparent;
     text-decoration: underline overline;
     display: inline-block;
   }
-   .lipa :link {
+   .lipa :link {/* Lipa is class to every links */
     color: black;
     background-color:  #a31aff;
     text-decoration: underline;
     display: inline-block;
   } 
-
-  .lipa :active {
+   
+  .lipa :active {/* Lipa is class to every links */
     color: #0000ff;
     background-color: transparent;
     text-decoration: overline;
     display: inline-block;
   }
-  .lipa :visited {
+  .lipa :visited {/* Lipa is class to every links */
     color: #1a3300;
     background-color: black;
     text-decoration: none;
     display: inline-block;
   }
   
-  .lipa :hover {
+  .lipa :hover {/* Lipa is class to every links */
     color: #00ff40;
     background-color: transparent;
     text-decoration: underline overline;
     display: inline-block;
   }
-
-  div {
-    background-color: #1a3300;
-  }
  
-  span {
-     color: #ff3300;
-  }
-  
-  .fa-guitar {
+  .fa-guitar {/* Emojii */
       color:white;
   }
-  .fa-award {
+
+  .fa-award {/* Emojii */
       color: #001a00;
   }
   
-   .fa-music {
+   .fa-music {/* Emojii */
        color:black;
    }
-   .fa-compact-disc {
+   
+   .fa-compact-disc {/* Emojii */
        color: black;
    }
+
+   .spanquestion {/* Stiling question/anket */
+    color:black; 
+    background-color:#33cccc;
+    margin: 5px;
+    padding: 5px;
+   }
+
+   
+   .jumb1 { /* jumb class is jumbotron box section */
+       background-color:#ffb3b3;
+       font-size: auto;
+   }
+
+   .jumb2 {/* jumb class is jumbotron box section */
+    background-color:#ff6600;
+    font-size: auto;
+    }
+
+    .jumb3 {/* jumb class is jumbotron box section */
+        background-color:#33ccff;
+        font-size: auto;
+    }
+
+    .jumb4 {/* jumb class is jumbotron box section */
+        background-color:#cc66ff;          
+        font-size: auto;
+    }
+
+    .jumb5 {/* jumb class is jumbotron box section */
+        background-color: #99cc00;
+        font-size: auto;
+    }
+
+    .jumb6 {/* jumb class is jumbotron box section */
+        background-color: #bf4040;
+        font-size: auto;
+    }
+
+    .jumb7 {/* jumb class is jumbotron box section */
+        text-align: center; 
+        color: #805500; 
+        background-color: #ffaa00
+    }
+
+    
+    * {/* Box with Elvi`s photos */
+        box-sizing: border-box;
+      }
+      
+      .img-container {/* Box with Elvi`s photos */
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+      }
+      
+      .clearfix::after {/* Box with Elvi`s photos */
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .ramka {
+        margin: 20px; 
+        padding: 20px;
+      }
+  
