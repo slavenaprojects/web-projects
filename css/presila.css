@@ -214,4 +214,30 @@ tr:nth-child(even) {
         margin: 20px; 
         padding: 20px;
       }
-  
+
+      .song {/* class to lyricks/ write a song  */
+          margin-top: 5px;
+          margin-bottom: 5px;
+          background-color:red;
+      }
+
+      .album { /* Hpow to look Which album it`s favourit */
+        background-color:green;
+      }
+
+      .bordal {/* How to look Vote button */
+          border: 3px solid green;
+      }
+
+      .bordsong {/* How to look Send my song button */
+        border: 3px solid red;
+    }
+     
+    .bordart {/* How to look range button */
+        border: 3px solid orangered;
+    }
+
+    .shou {/* How to look mark text */
+        border: 3px solid orangered;
+        background-color: white;
+    }
