@@ -199,14 +199,18 @@ tr:nth-child(even) {
         width: 33.33%;
         padding: 5px;
       }
-      
+
+      .img-container > img {/* Box with Elvi`s photos */
+        max-height: 634px;
+      }
+
       .clearfix::after {/* Box with Elvi`s photos */
         content: "";
         clear: both;
         display: table;
       }
 
-      .ramka {
+      .ramka { /* class to log in games */
         margin: 20px; 
         padding: 20px;
       }
