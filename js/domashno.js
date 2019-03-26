@@ -1,4 +1,5 @@
 function myConvect() {
+   
     document.getElementById("field4").value =
         document.getElementById("field3").value * 1.95583;
 }
@@ -15,3 +16,6 @@ function myLimits() {
     else
      alert("You can go to play");
     }
+
+
+    document.getElementById("today").innerHTML = new Date();
