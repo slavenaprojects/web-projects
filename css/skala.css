@@ -483,13 +483,22 @@ body {
     -ms-text-size-adjust: 100%;
 }
 
-/*
-----------------------------------------------------------------------------------------------------
-Body Background
-----------------------------------------------------------------------------------------------------
-*/
 
-.body-background { position: fixed; top: 0; left: 0; width: 100% !important; height: 100% !important; z-index: -99; }
+
+
+
+/* body {
+	background-image: url("img/playsong2.jpg");
+	background-repeat: no-repeat;
+	background-color: transparent; 
+	position: fixed; 
+	top: 0; 
+	left: 0; 
+	width: 100% !important; 
+	height: 100% !important; 
+	z-index: -99; 
+	
+} 
 .page-template-template-home-php .body-background { display: none; }
 
 /*
@@ -1007,6 +1016,10 @@ body.header-fixed .header {
 body.header-fixed.admin-bar .header {
     top: 28px;
 }
+body {
+	
+}
+ 
 
 /*
 ----------------------------------------------------------------------------------------------------
@@ -1844,6 +1857,7 @@ Canvas
 	padding: 0 20px;
 	margin: 0;
 	z-index: 0;
+		
 }
 .canvas:after {
     content: '';
@@ -5451,3 +5465,5 @@ print {
 	.merge .one-half, .merge .one-third, .merge .one-fourth, .merge .one-fifth, .merge .one-sixth, .merge .two-third, .merge .two-fourth, .merge .two-fifth, .merge .two-sixth, .merge .three-fourth, .merge .three-fifth, .merge .three-sixth, .merge .four-fifth, .merge .four-sixth, .merge .five-sixth { margin-left: 0; width: 100%; }
 	
 }
+
+
