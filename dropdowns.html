@@ -1,0 +1,49 @@
+<html>
+
+<body>
+    <select id="carmake" onchange="loadModels(this.value)">
+        <option disabled selected>Please select one</option>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="benz">Mercedes</option>
+        <option value="audi">Audi</option>
+    </select>
+
+    <select id="carmodel">
+        <option disabled selected>Please select make first</option>
+    </select>
+
+    <script>
+        var makes = {
+            audi: ['A1', 'A2', 'A6', 'Q7'],
+            benz: ['S500', 'SL63 AMG', 'VITO'],
+            saab: ['93', '90'],
+            volvo: ['XC90', 'Volvo 2']
+        };
+
+        // Slavi
+        var king = [
+            {title: "My Way",songs: ["Song 1", "Song 2"]},
+            {title: "Am Tar", songs: ["Song A", "Song B"]}
+        ]
+
+        function loadModels(carMake) {
+            // Select the <select> tag
+            var x = document.getElementById("carmodel");
+
+            // Delete all options except the 1st
+            x.options.length = 1;
+
+            // Iterate over each carmodel, create <option> tag and add it to the carmodel <select> tag
+            makes[carMake].forEach(function(val){
+                var option = document.createElement("option");
+                option.text = val;
+                x.add(option);
+            });
+
+        } // end loadModels()
+    </script>
+
+</body>
+
+</html>

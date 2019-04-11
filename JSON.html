@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Create Object from JSON String</h2>
+
+<p id="demo"></p>
+
+<script>
+var text = '{"employees":[' +
+'{"firstName":"John","lastName":"Doe" },' +
+'{"firstName":"Anna","lastName":"Smith" },' +
+'{"firstName":"Peter","lastName":"Jones" }]}';
+
+// Our JS object will be identical to the parsed JSON
+var objJSON = {
+    employees: [
+        {firstName: "John",  lastName: "Doe" },
+        {firstName: "Anna",  lastName: "Smith" },
+        {firstName: "Peter", lastName: "Jones" }
+    ]
+}
+
+obj = JSON.parse(text);
+document.getElementById("demo").innerHTML =
+obj.employees[1].firstName + " " + obj.employees[1].lastName;
+</script>
+
+<!-- Homework -->
+<!-- Re-write the dropdowns.html JS functionality
+     so that the data for the dependant dropdown
+     is provided via JSON. -->
+
+</body>
+</html>

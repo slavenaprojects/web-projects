@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Input your age and click the button:</p>
+
+<input id="age" value="18" />
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var age, concert;
+  age = document.getElementById("age").value;
+  concert = (age > 20 && age < 50 ) ? "Go to registration": "Sorry, you can`t make registration";
+  document.getElementById("demo").innerHTML = concert + ", have a nice day.";
+}
+
+
+console.log(a > 20 && a < 50);
+// expected output: false
+
+console.log(a > 0 || b > 0);
+// expected output: true
+
+console.log(!(a > 0 || b > 0));
+// expected output: false
+
+</script>
+
+</body>

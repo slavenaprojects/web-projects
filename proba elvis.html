@@ -1,0 +1,96 @@
+<html>
+
+<body onload="populateDays()">
+    <select style="width: 20%" id="elvAlbum" onchange="loadTrack(this.value); loadPrice(this.value)">
+        <option disabled selected>Please select album</option>
+        <option value="My Way">My way</option>
+        <option value="Love me tender">Love me tender</option>
+        <option value="If tomorrow never comes">If tomorrow never comes</option>
+        <option value="Trouble">Trouble</option>
+        <option value="Upp all night">Upp all night</option>
+    </select>
+
+    <select id="elvsongs" style="width: 20%">
+        <option disabled selected>Album`s songs:</option>
+    </select>
+
+    <select id="elvprice" style="width: 20%">
+        <option disabled selected> Price with sale tax:</option>
+    </select>
+  
+  <script>
+       
+        var king = [
+            {title: "My Way",songs: ["My way", "Always on my mind", "Feel", "Seven spanish angels"]},
+            {title: "Love me tender", songs: ["Love me tender", "Polk Salad Ani", "It`s a mans world", "Let it be me"]},
+            {title: "If tomorrow never comes",songs: ["If tomorrow never comes", "Leave rigth now", "Feeling good", "Stuck on you"]},
+            {title: "Trouble",songs: ["Trouble", "Achy breacky hearth", "When I was your man", "You belong to me"]},
+            {title: "Upp all night",songs: ["Upp all night", "Endless love", "Love me", "Try to get you"]},
+        ]
+
+        var gold = [
+            {title: "My Way",price: ["50$"]},
+            {title: "Love me tender", price: ["45$"]},
+            {title: "If tomorrow never comes",price: ["72$"]},
+            {title: "Trouble",price: ["300$"]},
+            {title: "Upp all night",price: ["20$"]},
+        ]
+
+
+        function loadTrack(elvAlbum) {
+                var x = document.getElementById("elvsongs");
+                    x.options.length = 1;
+
+        
+            king.forEach(function(val){
+                if (val.title == elvAlbum) {
+                    val.songs.forEach(function(song){
+                        var option = document.createElement("option");
+                        option.text = song;
+                        x.add(option);
+                    });
+                }
+            });
+
+        } 
+
+
+
+        function loadPrice(elvAlbum) {
+                  var y = document.getElementById("elvprice");
+                      y.options.length = 1;
+           gold.forEach(function(val){
+               if (val.title == elvAlbum) {
+                   val.price.forEach(function(prices){
+                       var option = document.createElement("option");
+                       option.text = prices;
+                       y.add(option);
+                   });
+               }
+           });
+
+       } 
+    </script>
+
+<label for="start">Left days to concert:</label>
+
+<input type="days" id="elvBirth"value="">
+
+<script>
+    function populateDays() {
+        var myBirthday, today, bday, diff, days;
+        myBirthday = [8, 1]; // 8th of January
+        today = new Date();
+        bday = new Date(today.getFullYear(), myBirthday[1] - 1, myBirthday[0]);
+        if (today.getTime() > bday.getTime()) {
+            bday.setFullYear(bday.getFullYear() + 1);
+        }
+        diff = bday.getTime() - today.getTime();
+        days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        document.getElementById("elvBirth").value = days;
+    }
+</script>
+
+</body>
+
+</html>

@@ -18,9 +18,11 @@ var d = new Date();
 var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 document.getElementById("demo").innerHTML = days[d.getDay()];
 
+
+
 // task 4
 var myBirthday, today, bday, diff, days;
-myBirthday = [30,6]; // 30th of June
+myBirthday = [8,1]; // 8th of January
 today = new Date();
 bday = new Date(today.getFullYear(),myBirthday[1]-1,myBirthday[0]);
 if( today.getTime() > bday.getTime()) {
@@ -28,4 +30,4 @@ if( today.getTime() > bday.getTime()) {
 }
 diff = bday.getTime()-today.getTime();
 days = Math.floor(diff/(1000*60*60*24));
-alert(days+" days until Slavena's birthday!");
+alert(days+" days until Elvis's birthday!");
