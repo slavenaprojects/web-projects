@@ -5,7 +5,8 @@
 <h2>Create Object from JSON String</h2>
 
 <p id="demo"></p>
-
+<p id="demon"></p>
+<p id="demon3"></p>
 <script>
 var text = '{"employees":[' +
 '{"firstName":"John","lastName":"Doe" },' +
@@ -31,5 +32,43 @@ obj.employees[1].firstName + " " + obj.employees[1].lastName;
      so that the data for the dependant dropdown
      is provided via JSON. -->
 
+     <script>
+        var makes = {
+            audi: ['A1', 'A2', 'A6', 'Q7'],
+            benz: ['S500', 'SL63 AMG', 'VITO'],
+            saab: ['93', '90'],
+            volvo: ['XC90', 'Volvo 2']
+        };
+
+
+        var obektJSON = {
+               "audi":['A1', 'A2', 'A6', 'Q7'],
+               "benz":['S500', 'SL63 AMG', 'VITO'],
+               "saab": ['93', '90'],
+               "volvo":['XC90', 'Volvo 2']
+            };
+        
+            obekt = JSON.parse();
+            document.getElementById("demon").innerHTML =
+                obektJSON.audi[3] + " " + obektJSON.saab[1];
+
+
+
+                var king = [
+            {title: "My Way", songs: ["Song 1", "Song 2"]},
+            {title: "Am Tar", songs: ["Song A", "Song B"]}];
+
+            var albumJSON = {
+                title: "My Way", songs: ["Song 1", "Song 2"],
+                title: "Am Tar", songs: ["Song A", "Song B"],
+            }
+            album = JSON.parse(text);
+            document.getElementById("demon3").innerHTML =
+            albumJSON.title[0] + " " + albumJSON.songs[0];
+
+
+           
+
+</script>
 </body>
 </html>
