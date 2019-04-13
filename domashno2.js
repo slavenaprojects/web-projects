@@ -1,13 +1,16 @@
 
-var numbers1 = [true, "4", 9, undefined, "25"];
+
+
+
+
+var numbers1 = [45, "4", 9, 16, "25"];
 var numbers2 = numbers1.map(myFunction);
 
 document.getElementById("demo").innerHTML = numbers2;
 
 function myFunction(value, array) {
-  console.log(typeof value) 
   return typeof value;
- 
+  console.log(typeof value)
 }
 
 
@@ -19,11 +22,9 @@ document.getElementById("opit").innerHTML = myWork(nar);
 function myWork(array) {
  if 
   (Array.isArray(array)) {
-      console.log(Hello, Slavena)
       return "Hello, Slavena!";
     }
 }
-
 
 
 var slavi = ["Gumza", "Godji", "Trifonov"];
@@ -31,8 +32,6 @@ var slavi = ["Gumza", "Godji", "Trifonov"];
             alert("The length it`s:" + slavi.length)
 
 
-
-
 var person = ["Kevin", "Nik", "police"]
-var kamion = [person + " " + "there are heroes"]
-    console.log(kamion.length)
+var kamion = [person + " " + "there are hansdome"]
+console.log(kamion.length)
