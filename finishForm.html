@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <title>Final Form Task</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.1/examples/checkout/">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 order-md-1">
+
+                <h2>Personal Info Form</h2>
+
+                <form action="/">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="name">Name</label>
+                            <input id="name" type="text" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            Age: <input type="number" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            EGN: <input type="number" id="egn" pattern="[0-9]{10}" required="required"> <br>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            Sex: <input type="radio" name="sex" value="F"> Female
+                            <input type="radio" name="sex" value="M" required> Male <br>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <input type="submit" value="Submit" onclick="form_submit()">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+<script>
+
+function form_submit() {
+    alert(SUPER);
+}
+
+
+
+</script>
+
+</body>
+
+</html>

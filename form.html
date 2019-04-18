@@ -1,0 +1,128 @@
+<html>
+
+<head>
+    <title>Final Form Task</title>
+    <meta charset="utf-8">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.1/examples/checkout/">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 order-md-1">
+
+                <h2>Personal Info Form</h2>
+
+                <form action="/" method="POST">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="name">Name</label>
+                            <input id="name" type="text" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="age">Age</label>
+                            <input id="age" type="text">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="egn">EGN</label>
+                            <input id="egn" type="text" required="required">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="egn">Sex</label> <br>
+                            <input type="radio" name="sex" value="F"> Female
+                            <input type="radio" name="sex" value="M"> Male
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <input type="submit" value="Submit" onclick="event.preventDefault(); form_submit();">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function form_submit() {
+            var valid = false;
+            
+            if (!validate_name()) {
+                console.log("Name is not valid!");
+                return false;
+            } else if ( !validate_age() ) {
+                console.log("Age is not valid!");
+                return false;
+            } else if ( !validate_egn() ) {
+                console.log("EGN is not valid!");
+                return false;
+            } else if ( !validate_sex() ) {
+                console.log("Please choose your sex!");
+                return false;
+            }
+        }
+
+        function validate_name() {
+            var v = document.getElementById("name").value;
+
+            if ( v.length < 1 ) {
+                document.getElementById("name").style.border = "2px solid red";
+                return false;
+            }
+            
+            return true;
+        }
+
+        function validate_age() {
+            var v = document.getElementById("age").value;
+
+            if ( isNaN( Number(v) ) ) 
+                return false;
+            
+            return true;
+        }
+
+        function validate_egn() {
+            var v = document.getElementById("egn").value;
+
+            if ((v.length != 10) || isNaN( Number(v) ))
+                return false;
+
+            return true;
+        }
+
+        function validate_sex() {
+            var s = document.getElementsByName("sex");
+
+            var isSexChecked = false;
+
+            s.forEach(function (val) {
+                if (val.checked == true)
+                    isSexChecked = true;
+            });
+
+            return isSexChecked;
+
+        }
+
+        function isEmpty(elementID) {
+            var val = document.getElementById(elementID).value;
+            if (val.length < 1)
+                return true;
+            else
+                return false;
+        }
+
+    </script>
+
+</body>
+
+</html>

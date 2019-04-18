@@ -1,0 +1,82 @@
+<html>
+
+<body>
+    <select id="carmake" onchange="loadModels(this.value)">
+        <option disabled selected>Please select one</option>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="benz">Mercedes</option>
+        <option value="audi">Audi</option>
+    </select>
+
+    <select id="carmodel">
+        <option disabled selected>Please select make first</option>
+    </select>
+
+<div id="demo"></div>
+
+    <script>
+        var makes = {
+            audi: ['A1', 'A2', 'A6', 'Q7'],
+            benz: ['S500', 'SL63 AMG', 'VITO'],
+            saab: ['93', '90'],
+            volvo: ['XC90', 'Volvo 2']
+        };
+
+        function loadModels(carMake) {
+            // Select the <select> tag
+            var x = document.getElementById("carmodel");
+
+            // Delete all options except the 1st
+            x.options.length = 1;
+
+            // Iterate over each carmodel, create <option> tag and add it to the carmodel <select> tag
+            makes[carMake].forEach(function(val){
+                var option = document.createElement("option");
+                option.text = val;
+                x.add(option);
+            });
+
+            // Same implementation using for loop
+            var i = 0;
+            for (i = 0; i < makes[carMake].length; i++) {
+                var option = document.createElement("option"); // <option></option>
+                option.text = makes[carMake][i];               // <option>A1</option>
+                x.add(option);
+            }
+
+            // Same implementation using while loop
+            var i = 0;
+            while (i < makes[carMake].length) {
+                var option = document.createElement("option"); // <option></option>
+                option.text = makes[carMake][i];               // <option>A1</option>
+                x.add(option);
+                i++;
+            }
+
+            // Same implementation using do-while loop
+            // Since do-while will execute at least once, mind iterating over empty arrays
+            var i = 0;
+            do {
+                var option = document.createElement("option"); // <option></option>
+                option.text = makes[carMake][i];               // <option>A1</option>
+                x.add(option);
+                i++;
+            }
+            while (i < makes[carMake].length);
+
+        } // end loadModels()
+
+
+        // Simple while example
+        var i = 10;
+        while (i > 0) {
+            console.log(i);
+            i--;
+        }
+
+    </script>
+
+</body>
+
+</html>
