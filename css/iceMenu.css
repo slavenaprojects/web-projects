@@ -5829,14 +5829,11 @@ button.close{
   height: 10%;
   position: relative;
   float: right;
-  
-
-  }
+}
 
 .animation2 {
   width: 15%;
-  height: 10%;
-
+  height: 5%;
 }
 
 .wishStyle {
@@ -5890,15 +5887,12 @@ button.close{
   color: white;
   background-color: transparent;
   font-size: 19px;
- 
 }
 
 .stylePre2 {
   color: black;
   background-color: transparent;
   font-size: 19px;
- 
- 
 }
 
 .centered2 {

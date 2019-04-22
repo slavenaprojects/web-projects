@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body, html {
+    height: 100%;
+    margin: 0;
+}
+
+  .text-container {
+    float: right;
+    width: 20%;
+    padding: 5px;
+    margin: 1%;
+    border: 5px solid orange;
+    min-height: 550px;
+    background-color:#ffbb99;       
+}
+
+  
+
+  .container {
+    position: relative;
+    text-align: center;
+    color: black;
+    display: block;
+    margin-top: 3%;
+    
+
+}
+
+  .button1 {
+      position: absolute;
+      left: 0; 
+      bottom: 0;
+      width: 100%;
+      height: 45px; 
+      color: lightseagreen;    
+}
+
+.logo1 {
+    width:30%;
+    position: absolute;
+    top: -8%;
+    left: 35%;
+    
+}
+
+.rowStyle {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+   
+}
+
+.rowStyle2 {
+    position: absolute;
+    top: 350px;
+    width: 100%;
+    text-decoration: underline;
+    color: red;
+   
+}
+
+.rowStyle2:hover {
+    color: red;
+    text-decoration: underline;
+    font-size: 150%;
+   
+}
+
+.button1:hover {
+    position: absolute;
+    background-color: orange;          
+}
+
+.picture {
+    background-image: url("../img/desktop3.jpeg");
+    background-repeat:no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+    background-position: center;
+   
+      
+}
+
+.clearBox {
+    clear: right;
+  }
