@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.fixed-bg {
+  background-image: url("../img/SAD.png");
+  min-height: 1000px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.flex-container {
+  display: flex;
+  background-color: hsl(100, 0%, 12%);
+  color: white;
+  position: fixed;
+  width: 100%;
+  height: 100px; 
+}
+
+.logoStyle {
+  background-size: contain;
+  height: 100px;
+  background-repeat: no-repeat;
+  margin-left: 320px;
+  position: absolute;
+  background: url("../img/logoSAD.png");
+}
+
+.logo-selector{
+  position: relative;
+}
+
+.flex-container > div.right:after {
+  content: '';
+  width: 0px;
+  height: 2px;
+  display: block;
+  background: #8B0000;
+  transition: 500ms;
+}
+
+.flex-container > div.right:hover:after {
+  width: 100%; 
+}
+
+a {
+	text-decoration: none;
+    color: white;  
+}
+
+
+.right {
+  list-style: none;
+  display: inline-block;
+  margin-left: 150px;
+  padding-top: 18px;
+  padding-right: 0;
+  text-align: right;
+}
+
+
+.boxInfo {
+  background-color: white;
+  color: black;
+  height:1000px;
+  text-align: center;
+}
+
+.boxText {
+  font-size: 50px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.boxInfo2 {
+  background-color: pink;
+  color: black;
+  height:1000px;
+  text-align: center;
+  position: relative;
+}
+
+.boxText2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.boxInfo3 {
+  background-color: red;
+  height:1000px;
+  text-align: center;
+  position: relative;
+  background-image: url("../img/tax.jpg");
+  background-position: bottom;
+  background-size: cover;
+  padding: 150px 0;
+  background-repeat: no-repeat;
+  background-blend-mode:multiply;
+}
+
+.boxText3 {
+  color: white;
+  max-width: 1000px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 15px;
+}
+
