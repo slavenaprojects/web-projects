@@ -1,11 +1,16 @@
-*, html {
+*, html, body {
   margin: 0;
   padding: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
+
 .fixed-bg {
   background-image: url("../img/SAD.png");
-  min-height: 1000px;
+  height: 100vh;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -30,14 +35,13 @@ a {
 .right {
   text-align: center;
   position: absolute;
-
 }
 
 
 .boxInfo {
   background-color: white;
   color: black;
-  height:1000px;
+  height:100vh;
   text-align: center;
 }
 
@@ -49,29 +53,15 @@ a {
   box-sizing: border-box;
 }
 
-.boxInfo2 {
-  background-color: white;
-  color: black;
-  height:1000px;
-  text-align: center;
-  
-}
 
-.boxText2 {
-  font-size: 45px;
-  margin-top: 50px;
-  position: absolute;
-  font-family: 'Sofia';
-  margin-left: 15%;
-}
 
 .boxInfo3 {
   background-color: red;
-  height:1000px;
+  height:100vh;
   text-align: center;
   position: relative;
   background-image: url("../img/tax.jpg");
-  
+  overflow-x: hidden;
   background-position: bottom;
   background-size: cover;
   padding: 150px 0;
@@ -81,7 +71,6 @@ a {
 
 .boxText3 {
   color: white;
-  max-width: 1000px;
   text-align: center;
   margin: 0 auto;
   font-size: 18px; 
@@ -174,7 +163,6 @@ a {
   color:white;
   width: 150px;
   padding: 10px;
-  margin-top: 15px;
   background-color: MediumSeaGreen;
   font-size: 15px;
   border: none;
@@ -187,111 +175,113 @@ a {
 }
 
 
-div.boR {
-  border: 1px solid black;
-  position: absolute;
-  margin-top: 17%;
-  margin-left: 50%;
-  padding-bottom: 25%;
+.boxInfo2 {
+  background-color: #ffe6e6;
+  color: black;
+  height:100vh;
+  position: relative;  
 }
 
-div.roB {
-  border: 1px solid black;
-  position: absolute;
-  margin-top: 30%;
-  margin-left: 15%;
-  padding-left: 70%;
+
+.boxText2 {
+  font-family: 'Sofia';
+  
+} 
+
+.styleH2 {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 100px;
 }
+
+
+.col {
+  float: left;
+  width: 50%;
+  text-align: center;
+  line-height: 0.9;
+  font-size: 15px;
+  padding: 15px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+div.borRed {
+ border-bottom: 3px solid red;
+}
+
+div.redBor {
+ border-right: 3px solid red;
+} 
+
 
 div.tex1 {
-  position: absolute;
-  margin-left: 26%;
-  margin-top: 25%;
-  font-size: 20px;
-  line-height: 0.9;
-}
-
-.suit {
-  width: 5%;
-  position: absolute;
-  margin-left: -15%;
-  margin-top: 20%;
-}
-
-
-.posic {
-  position: absolute;
-  margin-left: -4%;
-  margin-top: 45%;
+  margin-left: 25%;
 }
 
 div.tex2 {
-  position: absolute;
-  margin-left: 52%;
-  margin-top: 25%;
-  font-size: 20px;
-  line-height: 0.9;
-}
-
-.users {
-  width: 5%;
-  position: absolute;
-  margin-left: 12%;
-  margin-top: 20%;
+  margin-right: 25%;
 }
 
 div.tex3 {
-  position: absolute;
   margin-left: 25%;
-  margin-top: 38%;
-  font-size: 20px;
-  line-height: 0.9;
-}
-
-.human {
-  width: 5%;
-  position: absolute;
-  margin-left: -16%;
-  margin-top: 32%;
 }
 
 div.tex4 {
-  position: absolute;
-  margin-left: 52%;
-  margin-top: 38%;
-  font-size: 20px;
-  line-height: 0.9;
+  margin-right: 25%;
+}
+
+div.tex5 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+
+.suit {
+  width: 10%;
+}
+
+
+.users {
+  width: 8%;
+}
+
+
+
+.human {
+  width: 10%;
 }
 
 .law {
-  width: 5%;
-  position: absolute;
-  margin-left: 12%;
-  margin-top: 32%;
+  width: 10%;
 }
+
+
+
+
 
 .boxInfo4 {
   position: relative;
-  background-color: white;
+  background-color: green;
   color: black;
-  height:1000px;
+  height:1200px;
   margin: 0;
   padding: 0;
-  
 }
 
 .boxText4 {
   font-size: 25px;
-  margin-top: 50px;
-  position: relative;
   font-family: 'Sofia';
- 
 }
 
 .mapStyle {
-  position: absolute;
   width: 100%;
-  height: 600px;
+  height:470px;
   margin-left: 0;
 }
 
@@ -301,6 +291,7 @@ div.tex4 {
 
 .texAlign {
   text-align: center;
+  padding: 15px;
 }
 
 /* The container */
@@ -315,6 +306,7 @@ div.tex4 {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  margin-left: 15px;
 }
 
 /* Hide the browser's default radio button */
@@ -370,12 +362,13 @@ div.tex4 {
 }
 
 .formBttn {
-	position: absolute;
-	width: 12%;
-  height:12%;
 	background-color: MediumSeaGreen;
   color: white;
-  margin-top: 2%;
+  width: 150px;
+  padding: 10px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  margin-top: 10px;
 }
 
 .formBttn:hover {
@@ -384,41 +377,38 @@ div.tex4 {
 }
 
 input[type=text] {
-  width: 25%;
+  width: 40%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
   border: none;
   border-bottom: 2px solid MediumSeaGreen;
-  margin-left: 10px;
+  margin-left: 15px;
 }
 
 div.boxForm {
-  position: absolute;
-  margin-left: 45%;
-  margin-top: 28%;
-  padding: 10px;
+  width:auto;
   border: 1px solid white;
   background-color: white;
-  height: 300px;
+  text-align: start;
 }
 
 h1.zoomLetter {
   font-size: 25px;
+  text-align: start;
+  margin-top: 10px;
+  margin-left: 15px;
 }
 
 div.boxContacts {
-  position: absolute;
-  margin-top: 28%;
   border: 1px solid MediumSeaGreen;
   background-color: MediumSeaGreen;
   color: white;
-  width: 25%;
   padding: 15px;
-  margin-left: 20%;
-  z-index: 100;
   font-size: 15px;
-  height: 300px;
+  height: 269.5px;
+  line-height: 1.5;
+  margin-left: -5%;
 }
 
 .fa-map-marker-alt .fa-phone .fa-envelope{
@@ -428,7 +418,7 @@ div.boxContacts {
 .costum {
 	width: 100%;
   padding: 12px 20px;
-  margin: 8px 0;
+  margin-left: 15px;
   box-sizing: border-box;
   border: none;
   border-bottom: 2px solid MediumSeaGreen;
@@ -436,10 +426,11 @@ div.boxContacts {
 
 
   .foot {
-  position: absolute;
-  bottom:0;
   width:100%;
-  top:1200%;
+  height: 70px;
+  text-align: center;
+  bottom: 0;
+  position: absolute;
 }
 
 .footStyle {
@@ -454,7 +445,6 @@ div.boxContacts {
 
 
   .posiT {
-    position: absolute;
     margin-left: 25%;
   }
   
@@ -469,6 +459,17 @@ div.boxContacts {
     background-repeat: no-repeat;
     background-position: center;
 }
-  
+
+
+div.cardShadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+ 
+
+
+
+
+
+
 
   
