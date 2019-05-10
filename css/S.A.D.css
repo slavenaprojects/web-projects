@@ -838,4 +838,10 @@ div.colBox {
   .card {
     width: 100%;
   }
+  .suit, .human,  .law {
+    width: 40%;
+  }
+  .users {
+    width: 28%;
+  }
 }
