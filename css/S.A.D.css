@@ -40,11 +40,12 @@ a {
 
 
 .boxInfo {
+  padding: 40px 0;
   background-color: white;
   color: black;
-  height:100vh;
+  /* height:100vh; */
   text-align: center;
-  position: relative;
+  /* position: relative; */
 }
 
 .boxText {
@@ -79,8 +80,7 @@ a {
   font-size: 18px; 
 }
 
-
-.main-nav {
+.navigation {
   display: -webkit-flex;
   display: flex;
   width: 100%;
@@ -90,6 +90,29 @@ a {
   list-style: none;
   margin: 0;
   z-index: 100;
+}
+
+.logo-container img {
+  max-width: 200px;
+}
+
+/* .main-nav {
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background-color: hsl(100, 0%, 12%);
+  position: fixed;
+  list-style: none;
+  margin: 0;
+  z-index: 100;
+} */
+nav {
+  width: calc(100% - 200px);
+  text-align: right;
+}
+.main-nav li {
+  display: inline-block;
 }
 .main-nav li:first-child {
   margin-right: auto;
@@ -102,12 +125,12 @@ a {
 	padding: 1px;
 	text-decoration: none;
 }
-.main-nav .logo {
+/* .main-nav .logo {
   background-repeat: no-repeat;
   height: 100px;
   margin-left: 150px;
   width: 250px;
-}
+} */
 .main-nav  > li a.undLine:after {
   content: '';
   width: 0px;
@@ -269,10 +292,10 @@ div.tex5 {
 
 
 .boxInfo4 {
-  position: relative;
+  /* position: relative; */
   background-color: white;
   color: black;
-  height:1200px;
+  /* height:1200px; */
   margin: 0;
   padding: 0;
 }
@@ -314,22 +337,29 @@ div.tex5 {
 
 /* Hide the browser's default radio button */
 .container input {
-  position: absolute;
+  /* position: absolute; */
   opacity: 0;
   cursor: pointer;
 }
 
 /* Create a custom radio button */
 .checkmark {
-  position: absolute;
+  /* position: absolute;
   top: 0;
-  left: 0;
+  left: 0; */
+  display: inline-block;
   height: 20px;
   width: 20px;
   border: 3px solid MediumSeaGreen;
   background-color: white;
   border-radius: 50%;
 }
+
+/* [name="radio"] {
+  position: fixed;
+  top: -2000px;
+  left: -2000px;
+} */
 
 /* On mouse-over, add a grey background color */
 .container:hover input ~ .checkmark {
@@ -338,16 +368,17 @@ div.tex5 {
 
 /* When the radio button is checked, add a blue background */
 .container input:checked ~ .checkmark {
-  background-color: MediumSeaGreen;
+  /* background-color: MediumSeaGreen; */
+  border-width: 7px;
   
 }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
-.checkmark:after {
+/* .checkmark:after {
   content: "";
   position: absolute;
   display: none;
-}
+} */
 
 /* Show the indicator (dot/circle) when checked */
 .container input:checked ~ .checkmark:after {
@@ -355,14 +386,14 @@ div.tex5 {
 }
 
 /* Style the indicator (dot/circle) */
-.container .checkmark:after {
+/* .container .checkmark:after {
  	top: 10%;
 	left: 13%;
 	width: 10px;
 	height: 10px;
 	border-radius: 50%;
 	background: white; 
-}
+} */
 
 .formBttn {
 	background-color: MediumSeaGreen;
@@ -411,8 +442,12 @@ div.boxContacts {
   font-size: 15px;
   height: 269.5px;
   line-height: 1.5;
-  margin-left: -5%;
-  width: 50%;
+  /* margin-left: -5%; */
+  /* width: 50%; */
+}
+
+.contact-info {
+  margin-top: -50px;
 }
 
 .fa-map-marker-alt .fa-phone .fa-envelope{
@@ -433,8 +468,8 @@ div.boxContacts {
   width:100%;
   height: 70px;
   text-align: center;
-  bottom: 0;
-  position: absolute;
+  /* bottom: 0;
+  position: absolute; */
 }
 
 .footStyle {
@@ -442,7 +477,7 @@ div.boxContacts {
   color: white;
   padding-top: 2%;
   padding-bottom: 2%;
-  padding-left: 20%;
+  /* padding-left: 20%; */
   font-family: 'Times New Roman', Times, serif;
   font-size:15px;
   }
@@ -467,12 +502,12 @@ div.boxContacts {
 
 
 div.colBox {
-	float: left;
+	/* float: left; */
     text-align: center;
   	line-height: 0.9;
   	font-size: 15px;
     padding: 15px;
-    margin-left: 150px;
+    /* margin-left: 150px; */
 }
 
 
@@ -486,7 +521,7 @@ div.colBox {
 #f1_container {
   position: relative;
   margin: 0;
-  width: 400px;
+  /* width: 400px; */
   height: 360px;
   z-index: 1;
   margin-top: 20px;
@@ -495,7 +530,7 @@ div.colBox {
   perspective: 1000;
 }
 #f1_card {
-  max-width: 500px;
+  /* max-width: 500px; */
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
@@ -533,12 +568,12 @@ div.colBox {
   border-radius: 12px;
 }
 
-.paragrStyle {
+/* .paragrStyle {
 	position: absolute;
 	top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
+} */
 
 .paragrStyle3 {
 	position: absolute;
@@ -549,7 +584,7 @@ div.colBox {
 
 .animBtn {
   position: absolute;
-  width: 35%;
+  /* width: 35%; */
   top: 80%;
   left: 50%;
   transform: translate(-80%, -50%);
@@ -574,50 +609,56 @@ div.colBox {
 }
 
 .katinar {
-	position: absolute;
+	/* position: absolute;
 	top: 25%;
   left: 50%;
-  transform: translate(-50%, 25%);
+  transform: translate(-50%, 25%); */
   width: 10%;
+  margin: 20px auto;
 }
 
 .calculator {
-	position: absolute;
+	/* position: absolute;
 	top: 25%;
   left: 50%;
-  transform: translate(-50%, 25%);
+  transform: translate(-50%, 25%); */
   width: 15%;
+  margin: 20px auto;
 }
 
 .consult {
-	position: absolute;
+	/* position: absolute;
 	top: 25%;
   left: 50%;
-  transform: translate(-50%, 25%);
+  transform: translate(-50%, 25%); */
   width: 15%;
+  margin: 20px auto;
 }
 
 .money {
-	position: absolute;
+	/* position: absolute;
 	top: 25%;
   left: 50%;
-  transform: translate(-50%, 25%);
+  transform: translate(-50%, 25%); */
   width: 25%;
+  margin: 20px auto;
 }
 .worker {
-	position: absolute;
+	/* position: absolute;
 	top: 25%;
   left: 50%;
-  transform: translate(-50%, 25%);
+  transform: translate(-50%, 25%); */
   width: 30%;
+  margin: 20px auto;
 }
 
 .clock {
-	position: absolute;
+	/* position: absolute;
 	top: 25%;
   left: 50%;
-  transform: translate(-50%, 25%);
+  transform: translate(-50%, 25%); */
   width: 15%;
+  margin: 20px auto;
 }
 
 .btnSide {
@@ -678,31 +719,6 @@ div.colBox {
 }
 
 
-
-
-
-
-/* For mobile phones: */
-[class*="col-"] {
-  width: 100%;
-}
-
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
-}
-
 .right2 {
   margin-left: 40%;
 }
@@ -719,8 +735,8 @@ div.colBox {
   height: 100px;
   margin-left: 100px;
   width: 250px;
-  top: 0;
-  position: absolute;
+  /* top: 0;
+  position: absolute; */
 }
 .main2-nav2  > li a.undLine2:after {
   content: '';
@@ -743,8 +759,9 @@ div.colBox {
 .navbar {
   overflow: hidden;
   background-color: black;
-  position: absolute;
-  bottom: 70px;
+  /* position: absolute;
+  bottom: 70px; */
+  margin-top: 50px;
   width: 100%;
   z-index: 100;
   height: 100px;
@@ -769,6 +786,56 @@ div.colBox {
   margin-right: auto;
 }
 
+.card {
+  width: calc(100% / 3 - 4px);
+  display: inline-block;
+}
 
+.card-info {
+  padding: 20px 0;
+}
 
+.col-8 {
+  width: 75%;
+  padding: 0;
+}
 
+.col-4 {
+  width: 25%;
+  padding: 0;
+}
+
+@media screen and (max-width: 992px) {
+  .card {
+    width: calc(100% / 2 - 3px)
+  }
+  nav {
+    display: none
+  }
+
+  [name="tgl-menu"] {
+    position: fixed;
+    top: -2000px;
+    left: -2000px;
+  }
+
+  [name="tgl-menu"]:checked ~ .wrapper nav {
+    display: block;
+    position: absolute;
+    top: 100px;
+    background: #231f20;
+    width: 100%;
+  }
+
+  [for=tgl-menu] img {
+    max-width: 50px;
+   
+  }
+
+}
+
+@media screen and (max-width: 640px) {
+  .card {
+    width: 100%;
+  }
+}
