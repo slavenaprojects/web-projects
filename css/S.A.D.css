@@ -43,9 +43,7 @@ a {
   padding: 40px 0;
   background-color: white;
   color: black;
-  /* height:100vh; */
   text-align: center;
-  /* position: relative; */
 }
 
 .boxText {
@@ -96,17 +94,7 @@ a {
   max-width: 200px;
 }
 
-/* .main-nav {
-  display: -webkit-flex;
-  display: flex;
-  width: 100%;
-  height: 100px;
-  background-color: hsl(100, 0%, 12%);
-  position: fixed;
-  list-style: none;
-  margin: 0;
-  z-index: 100;
-} */
+
 nav {
   width: calc(100% - 200px);
   text-align: right;
@@ -125,12 +113,7 @@ nav {
 	padding: 1px;
 	text-decoration: none;
 }
-/* .main-nav .logo {
-  background-repeat: no-repeat;
-  height: 100px;
-  margin-left: 150px;
-  width: 250px;
-} */
+
 .main-nav  > li a.undLine:after {
   content: '';
   width: 0px;
@@ -292,10 +275,8 @@ div.tex5 {
 
 
 .boxInfo4 {
-  /* position: relative; */
   background-color: white;
   color: black;
-  /* height:1200px; */
   margin: 0;
   padding: 0;
 }
@@ -335,18 +316,13 @@ div.tex5 {
   margin-left: 15px;
 }
 
-/* Hide the browser's default radio button */
+
 .container input {
-  /* position: absolute; */
   opacity: 0;
   cursor: pointer;
 }
 
-/* Create a custom radio button */
 .checkmark {
-  /* position: absolute;
-  top: 0;
-  left: 0; */
   display: inline-block;
   height: 20px;
   width: 20px;
@@ -355,45 +331,23 @@ div.tex5 {
   border-radius: 50%;
 }
 
-/* [name="radio"] {
-  position: fixed;
-  top: -2000px;
-  left: -2000px;
-} */
 
-/* On mouse-over, add a grey background color */
 .container:hover input ~ .checkmark {
   cursor: pointer;
 }
 
-/* When the radio button is checked, add a blue background */
+
 .container input:checked ~ .checkmark {
-  /* background-color: MediumSeaGreen; */
   border-width: 7px;
   
 }
 
-/* Create the indicator (the dot/circle - hidden when not checked) */
-/* .checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-} */
 
-/* Show the indicator (dot/circle) when checked */
+
 .container input:checked ~ .checkmark:after {
   display: inline-block;
 }
 
-/* Style the indicator (dot/circle) */
-/* .container .checkmark:after {
- 	top: 10%;
-	left: 13%;
-	width: 10px;
-	height: 10px;
-	border-radius: 50%;
-	background: white; 
-} */
 
 .formBttn {
 	background-color: MediumSeaGreen;
@@ -442,8 +396,6 @@ div.boxContacts {
   font-size: 15px;
   height: 269.5px;
   line-height: 1.5;
-  /* margin-left: -5%; */
-  /* width: 50%; */
 }
 
 .contact-info {
@@ -468,8 +420,6 @@ div.boxContacts {
   width:100%;
   height: 70px;
   text-align: center;
-  /* bottom: 0;
-  position: absolute; */
 }
 
 .footStyle {
@@ -477,7 +427,6 @@ div.boxContacts {
   color: white;
   padding-top: 2%;
   padding-bottom: 2%;
-  /* padding-left: 20%; */
   font-family: 'Times New Roman', Times, serif;
   font-size:15px;
   }
@@ -502,12 +451,10 @@ div.boxContacts {
 
 
 div.colBox {
-	/* float: left; */
     text-align: center;
   	line-height: 0.9;
   	font-size: 15px;
     padding: 15px;
-    /* margin-left: 150px; */
 }
 
 
@@ -521,7 +468,6 @@ div.colBox {
 #f1_container {
   position: relative;
   margin: 0;
-  /* width: 400px; */
   height: 360px;
   z-index: 1;
   margin-top: 20px;
@@ -530,7 +476,6 @@ div.colBox {
   perspective: 1000;
 }
 #f1_card {
-  /* max-width: 500px; */
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
@@ -568,12 +513,6 @@ div.colBox {
   border-radius: 12px;
 }
 
-/* .paragrStyle {
-	position: absolute;
-	top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-} */
 
 .paragrStyle3 {
 	position: absolute;
@@ -584,7 +523,6 @@ div.colBox {
 
 .animBtn {
   position: absolute;
-  /* width: 35%; */
   top: 80%;
   left: 50%;
   transform: translate(-80%, -50%);
@@ -609,54 +547,30 @@ div.colBox {
 }
 
 .katinar {
-	/* position: absolute;
-	top: 25%;
-  left: 50%;
-  transform: translate(-50%, 25%); */
   width: 10%;
   margin: 20px auto;
 }
 
 .calculator {
-	/* position: absolute;
-	top: 25%;
-  left: 50%;
-  transform: translate(-50%, 25%); */
   width: 15%;
   margin: 20px auto;
 }
 
 .consult {
-	/* position: absolute;
-	top: 25%;
-  left: 50%;
-  transform: translate(-50%, 25%); */
   width: 15%;
   margin: 20px auto;
 }
 
 .money {
-	/* position: absolute;
-	top: 25%;
-  left: 50%;
-  transform: translate(-50%, 25%); */
   width: 25%;
   margin: 20px auto;
 }
 .worker {
-	/* position: absolute;
-	top: 25%;
-  left: 50%;
-  transform: translate(-50%, 25%); */
   width: 30%;
   margin: 20px auto;
 }
 
 .clock {
-	/* position: absolute;
-	top: 25%;
-  left: 50%;
-  transform: translate(-50%, 25%); */
   width: 15%;
   margin: 20px auto;
 }
@@ -735,8 +649,6 @@ div.colBox {
   height: 100px;
   margin-left: 100px;
   width: 250px;
-  /* top: 0;
-  position: absolute; */
 }
 .main2-nav2  > li a.undLine2:after {
   content: '';
@@ -759,8 +671,6 @@ div.colBox {
 .navbar {
   overflow: hidden;
   background-color: black;
-  /* position: absolute;
-  bottom: 70px; */
   margin-top: 50px;
   width: 100%;
   z-index: 100;
